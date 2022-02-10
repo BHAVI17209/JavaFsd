@@ -1,4 +1,4 @@
-package com.project;
+package com.mainproject;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
