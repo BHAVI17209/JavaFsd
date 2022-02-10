@@ -9,10 +9,10 @@ public class FirstFiftyOdd {
 		
 		for(int i=1;i<=100;i++) {
 			
-			if(i%2 !=0) 
+			if(i%2 !=0) {
 				System.out.println(i);
+				count=count+1;}
 			
-			count=count+1;
 			if(count>50)
 				break;
 			
