@@ -1,0 +1,30 @@
+<h1>InterPolation</h1>
+<h3>Default title: {{title}}</h3>
+<h3>My title:  {{mytitle}}</h3>
+<h4>Hi.. {{fname}}  Welcome to angular binding</h4>
+<br><hr>
+<h1>Property Binding</h1>
+<img [src]="imgurl" [height]="h" [width]="w">
+<!--if you want to use interpolation u can use width={{w}} but for property binding u should use square brace, for interpolation u should use curled braces-->
+<hr>
+<h1>Event binding</h1>
+<button (click)="show()">Click here</button><!--instead of (click) u can use on-click-->
+<div *ngIf="flag">Welcome  :)</div>
+<hr>
+<h1>display Array using For</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th><th>Availablity</th><th>Price</th><th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products">
+            <td [style.color]="red" [style.font-weight]="we">{{p.name}}</td>
+            <!--class binding-->
+            <td [class.instock]="true">{{p.available}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.rating}}</td>
+        </tr>
+    </tbody>
+</table>
