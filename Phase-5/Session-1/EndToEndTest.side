@@ -1,0 +1,106 @@
+{
+  "id": "9f208c3a-6111-4b76-bc22-e9d0df7ead4b",
+  "version": "2.0",
+  "name": "EndToEndTest",
+  "url": "https://www.google.com/gmail/about/",
+  "tests": [{
+    "id": "168edff2-4cc0-4237-9286-72ec8e6b963b",
+    "name": "Gmail",
+    "commands": [{
+      "id": "f4060fd5-d76e-486e-85bd-9e73730e186b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/gmail/about/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fba90ec1-4c8f-43a3-af31-385b89660297",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "757x707",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c618f6b-f145-4b00-a0a1-d86d74210456",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.button--mobile-before-hero-only", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser')]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38189c13-b5e9-4a86-aec3-716243dc8a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w1I7fb",
+      "targets": [
+        ["css=.w1I7fb", "css:finder"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/ul/li/div/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5038d6d-4153-4fcc-9e28-e9c06d38f6dc",
+      "comment": "",
+      "command": "//click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9befa9a-efea-4502-b791-70aa9d196344",
+      "comment": "",
+      "command": "//type",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a7ad66-3652-4df8-a588-b644166d06e9",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-vQzf8d",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4288d02a-1a84-42d2-b670-c7d9a4d31c79",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "70ca7bf6-bd96-4506-bc07-cb382d1c88b8",
+    "name": "Google Test",
+    "commands": [{
+      "id": "48fceca9-2ba7-412b-968b-4b50f153c3df",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.google.co.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7582575-b932-4783-8258-9a2fb5ece003",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Google",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "84272a0d-9b32-487d-8784-c5a2778a88b1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["168edff2-4cc0-4237-9286-72ec8e6b963b"]
+  }],
+  "urls": ["https://www.google.com/gmail/about/"],
+  "plugins": []
+}
