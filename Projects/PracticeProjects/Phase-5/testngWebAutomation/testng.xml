@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MySuite">
+  <test thread-count="5" name="MyTest">
+    <classes>
+      <class name="com.testng.testngWebAutomation.Register"/>
+      <class name="com.testng.testngWebAutomation.Login"/>
+      <class name="com.testng.testngWebAutomation.AddToCart"/>
+      <class name="com.testng.testngWebAutomation.Search"/>
+    </classes>
+  </test> <!-- MyTest -->
+</suite> <!-- MySuite -->
